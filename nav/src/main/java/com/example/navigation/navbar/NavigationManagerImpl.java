@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.View;
 
 /**
  * Created by Moxtra on 2018/2/3.
@@ -47,6 +48,12 @@ public class NavigationManagerImpl implements NavigationManager {
         mFM.addOnBackStackChangedListener(mBackStackChangedListener);
         mStackHolderId = stackResId;
         mNavbar = navbar;
+        mNavbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                pop();
+            }
+        });
     }
 
     @Override
