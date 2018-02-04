@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Navigation</string>
+    <string name="root">Root</string>
+    <string name="second">Second</string>
+    <string name="last">Third</string>
+    <string name="next">Next</string>
+</resources>
